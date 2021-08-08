@@ -80,7 +80,7 @@ label{
 }
 
 input{
-    width: 100px;
+    width: 200px;
     height: 40px;
 
     font-size: 24px;
@@ -88,6 +88,16 @@ input{
     border-radius: 10px;
 
     border: 1px solid rgba(145, 145, 145, 0.726);
+
+    padding: 5px;
+}
+
+input::placeholder{
+    font-size: 16px;
+}
+
+input:focus{
+    outline: transparent;
 }
 
 #choose-button-div{
