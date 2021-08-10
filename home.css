@@ -38,6 +38,11 @@ span{
     font-size: 24px;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
 main{
     width: 40%;
     height: 70vh;
