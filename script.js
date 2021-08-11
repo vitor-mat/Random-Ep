@@ -14,14 +14,16 @@ const colection = {
 const buttonSaveGenerator = document.getElementById("save-button")
 
 
-
-const store = localStorage.getItem("store") || []
+const store = JSON.parse(localStorage.getItem("store")) || []
 
 buttonSaveGenerator.addEventListener("click", () => {
-    colection.name = formDataGenerator.name;
-    colection.season = formDataGenerator.season;
-    colection.episode = formDataGenerator.episode;
-    colection.id = Math.random() * 1000000;
+
+    colection.name = formDataGenerator.name.value;
+    colection.season = formDataGenerator.season.value;
+    colection.episode = formDataGenerator.episode.value;
+    colection.id = Math.random * 10000000;
+
+    console.log(store)
 
     store.push(colection)
 
