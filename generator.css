@@ -105,7 +105,7 @@ input:focus{
     outline: transparent;
 }
 
-#choose-button-div{
+#save-button-div{
     width: 100%;
     height: 70px;
 
@@ -115,7 +115,7 @@ input:focus{
     padding: 30px 50px 0 0;
 }
 
-#choose-button{
+#save-button{
     width: 100px;
     height: 40px;
 
