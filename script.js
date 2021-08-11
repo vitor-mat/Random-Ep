@@ -30,4 +30,11 @@ buttonSaveGenerator.addEventListener("click", () => {
     const jsoon = JSON.stringify(store)
 
     localStorage.setItem("store", jsoon)
+    clearInputs()
 })
+
+function clearInputs(){
+    formDataGenerator.name.value = "";
+    formDataGenerator.season.value = "";
+    formDataGenerator.episode.value = "";
+}
