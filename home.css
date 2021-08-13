@@ -111,8 +111,18 @@ main{
     text-align: center;
 }
 
-#main-seris-list-div > div {
+#main-series-list-div{
+    display: flex;
+    width: 100%;
+}
+
+#main-series-list-div > div {
     width: 33.33%;
     text-align: center;
     padding-top: 20px;
+}
+
+#main-series-list-div > div > p{
+    margin: 20px 0;
+    font-size: 24px;
 }
