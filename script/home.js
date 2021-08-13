@@ -2,7 +2,7 @@
 function showStore(){
     const store = JSON.parse(localStorage.getItem("store"))
 
-    const principal = document.getElementsByTagName("main")[0]
+    const principal = document.getElementById("main-colunm-name")
 
     if(store){
 

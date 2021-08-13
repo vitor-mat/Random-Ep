@@ -57,6 +57,10 @@ main{
 }
 
 #title-main-my-series-text{
+    margin-bottom: 50px;
+}
+
+#title-main-my-series-text{
     text-transform: uppercase;
     text-decoration: underline;
     line-height: 40px;
@@ -88,4 +92,21 @@ main{
 
 #add-button > a{
     color: white;
+}
+
+#main-content-div{
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#main-content-title-div{
+    display: flex;
+}
+
+#main-content-title-div > div {
+    width: 33.33%;
+    text-align: center;
 }
