@@ -4,6 +4,7 @@ function showStore(){
 
     const mainColunmName = document.getElementById("main-colunm-name")
     const mainColunmSeasons = document.getElementById("main-colunm-seasons")
+    const mainColunmEpisodies = document.getElementById("main-colunm-episodes")
 
     if(store){
 
@@ -15,6 +16,10 @@ function showStore(){
             const seasons = document.createElement("p");
             seasons.innerHTML = store[c].season
             mainColunmSeasons.appendChild(seasons)
+
+            const episodes = document.createElement("p");
+            episodes.innerHTML = store[c].episode
+            mainColunmEpisodies.appendChild(episodes)
         }
     }
 }

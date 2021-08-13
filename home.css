@@ -86,8 +86,8 @@ main{
     cursor: pointer;
 
     position: relative;
-    top: 85%;
-    left: 25%;
+    top: 60%;
+    left: 40%;
 }
 
 #add-button > a{

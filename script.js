@@ -31,6 +31,7 @@ buttonSaveGenerator.addEventListener("click", () => {
 
     localStorage.setItem("store", jsoon)
     clearInputs()
+    document.getElementById("logo").click()
 })
 
 function clearInputs(){
