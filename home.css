@@ -86,7 +86,7 @@ main{
     cursor: pointer;
 
     position: relative;
-    top: 60%;
+    top: 50%;
     left: 40%;
 }
 
@@ -107,7 +107,7 @@ main{
 }
 
 #main-content-title-div > div {
-    width: 33.33%;
+    width: 25%;
     text-align: center;
 }
 
@@ -117,12 +117,32 @@ main{
 }
 
 #main-series-list-div > div {
-    width: 33.33%;
+    width: 25%;
     text-align: center;
     padding-top: 20px;
+    background: green;
 }
 
 #main-series-list-div > div > p{
     margin: 20px 0;
     font-size: 24px;
+    line-height: 24px;
+}
+
+.div-btn-gerar{ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#div-btn-gerar{
+    display: flex;
+    flex-direction: column;
+}
+
+#div-btn-gerar > button{
+    width: 50%;
+    height: 24px;
+    margin: 10.5px 0;
+
 }
