@@ -7,6 +7,7 @@ function showStore(){
     const mainColunmEpisodies = document.getElementById("main-colunm-episodes")
     const mainSeriesListDiv = document.getElementById("main-series-list-div")
     const divBtnGerar = document.getElementById("div-btn-gerar");
+    const divBtnDeletar = document.getElementById("div-btn-deletar");
 
     if(store){
 
@@ -24,11 +25,14 @@ function showStore(){
             mainColunmEpisodies.appendChild(episodes)
 
             const btnGerar = document.createElement("button");
-            
             btnGerar.innerHTML = "Gerar";
-
             divBtnGerar.appendChild(btnGerar);
             mainSeriesListDiv.appendChild(divBtnGerar);
+
+            const btnDeletar = document.createElement("button");
+            btnDeletar.innerHTML = "Deletar";
+            divBtnDeletar.appendChild(btnDeletar);
+            mainSeriesListDiv.appendChild(divBtnDeletar);
         }
     }
 }

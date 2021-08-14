@@ -107,7 +107,7 @@ main{
 }
 
 #main-content-title-div > div {
-    width: 25%;
+    width: 20%;
     text-align: center;
 }
 
@@ -117,10 +117,9 @@ main{
 }
 
 #main-series-list-div > div {
-    width: 25%;
+    width: 20%;
     text-align: center;
     padding-top: 20px;
-    background: green;
 }
 
 #main-series-list-div > div > p{
@@ -135,14 +134,38 @@ main{
     flex-wrap: wrap;
 }
 
-#div-btn-gerar{
+#div-btn-gerar, #div-btn-deletar{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#div-btn-gerar > button, #div-btn-deletar > button{
+    width: 25%;
+    height: 28px;
+    margin: 7.5px 0;
+
+    background: rgb(255, 58, 58);
+    color: white;
+
+    font-weight: 300;
+
+    border-radius: 10px;
+    border: 0.5px solid rgb(189, 189, 189);
+
+    cursor: pointer;
 }
 
 #div-btn-gerar > button{
-    width: 50%;
-    height: 24px;
-    margin: 10.5px 0;
 
+    background: var(--purple-color-light);
+    color: white;
+
+    font-weight: 300;
+
+    border-radius: 10px;
+    border: 0.5px solid rgb(189, 189, 189);
+
+    cursor: pointer;
 }
