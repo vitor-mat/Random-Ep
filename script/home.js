@@ -26,11 +26,13 @@ function showStore(){
 
             const btnGerar = document.createElement("button");
             btnGerar.innerHTML = "Gerar";
+            btnGerar.name = store[c].id
             divBtnGerar.appendChild(btnGerar);
             mainSeriesListDiv.appendChild(divBtnGerar);
 
             const btnDeletar = document.createElement("button");
             btnDeletar.innerHTML = "Deletar";
+            btnDeletar.name = store[c].id
             divBtnDeletar.appendChild(btnDeletar);
             mainSeriesListDiv.appendChild(divBtnDeletar);
         }

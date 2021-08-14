@@ -21,7 +21,7 @@ buttonSaveGenerator.addEventListener("click", () => {
     colection.name = formDataGenerator.name.value;
     colection.season = formDataGenerator.season.value;
     colection.episode = formDataGenerator.episode.value;
-    colection.id = Math.random * 10000000;
+    colection.id = Math.random() * 10000000;
 
     console.log(store)
 
