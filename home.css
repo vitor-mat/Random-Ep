@@ -23,7 +23,9 @@
     gap: 10px;
 
     background: rgb(226,184,207);
-background: linear-gradient(180deg, rgba(226,184,207,0.8239670868347339) 0%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(226,184,207,0.8239670868347339) 0%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 100%);
+
+    position: relative;
 }
 
 
@@ -52,8 +54,6 @@ main{
     align-items: center;
 
     gap: 20px;
-
-    position: relative;
 }
 
 #title-main-my-series-text{

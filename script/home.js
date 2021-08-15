@@ -33,8 +33,12 @@ function showStore(){
             const btnDeletar = document.createElement("button");
             btnDeletar.innerHTML = "Deletar";
             btnDeletar.name = store[c].id
+            btnDeletar.setAttribute("id", `btn-deletar-${c}`)
             divBtnDeletar.appendChild(btnDeletar);
             mainSeriesListDiv.appendChild(divBtnDeletar);
+            document.querySelector(`#btn-deletar-${c}`).addEventListener("click", e => {
+                console.log(e.target.name)
+            })
         }
     }
 }
