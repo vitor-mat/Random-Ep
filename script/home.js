@@ -1,6 +1,11 @@
 
 function showStore(){
-    const store = JSON.parse(localStorage.getItem("store"))
+    const store = JSON.parse(localStorage.getItem("store")).sort((a, b) => {
+        if(b){
+            return Number(a.name.charCodeAt()) - Number(b.name.charCodeAt())
+        }
+            return true
+    })
 
     const mainColunmName = document.getElementById("main-colunm-name")
     const mainColunmSeasons = document.getElementById("main-colunm-seasons")
