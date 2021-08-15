@@ -37,10 +37,25 @@ function showStore(){
             divBtnDeletar.appendChild(btnDeletar);
             mainSeriesListDiv.appendChild(divBtnDeletar);
             document.querySelector(`#btn-deletar-${c}`).addEventListener("click", e => {
-                console.log(e.target.name)
+
+                removeItem(e.target.name, store)
+
             })
         }
     }
 }
 
 showStore()
+
+function removeItem(id, store){
+    const itemsFilted = store.filter( value => {
+        if(Number(id) == Number(value.id)){
+          return false
+        }
+        return true
+      })
+    
+      const itemsFiltedJSON = JSON.stringify(itemsFilted)
+      localStorage.setItem("store", itemsFiltedJSON);
+      document.getElementById("logo").click()
+}
