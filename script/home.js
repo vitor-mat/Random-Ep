@@ -1,4 +1,5 @@
 
+
 function showStore(){
     const store = JSON.parse(localStorage.getItem("store")).sort((a, b) => {
         if(b){
@@ -32,8 +33,18 @@ function showStore(){
             const btnGerar = document.createElement("button");
             btnGerar.innerHTML = `<a href="./random_ep.html">Gerar</a>`;
             btnGerar.name = store[c].id
+            btnGerar.setAttribute("id", `btn-gerar-${c}`)
             divBtnGerar.appendChild(btnGerar);
             mainSeriesListDiv.appendChild(divBtnGerar);
+            document.querySelector(`#btn-gerar-${c}`).addEventListener("click", () => {
+                const choosedItem = {
+                    name: store[c].name,
+                }
+
+                localStorage.setItem("choosedItem", JSON.stringify(choosedItem))
+
+            })
+
 
             const btnDeletar = document.createElement("button");
             btnDeletar.innerHTML = "Deletar";
