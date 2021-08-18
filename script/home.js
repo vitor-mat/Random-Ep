@@ -30,7 +30,7 @@ function showStore(){
             mainColunmEpisodies.appendChild(episodes)
 
             const btnGerar = document.createElement("button");
-            btnGerar.innerHTML = "Gerar";
+            btnGerar.innerHTML = `<a href="./random_ep.html">Gerar</a>`;
             btnGerar.name = store[c].id
             divBtnGerar.appendChild(btnGerar);
             mainSeriesListDiv.appendChild(divBtnGerar);
