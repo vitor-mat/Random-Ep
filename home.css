@@ -160,7 +160,6 @@ main{
 #div-btn-gerar > button{
 
     background: var(--purple-color-light);
-    color: white;
 
     font-weight: 300;
 
@@ -168,4 +167,8 @@ main{
     border: 0.5px solid rgb(189, 189, 189);
 
     cursor: pointer;
+}
+
+#div-btn-gerar > button > a{
+    color: white;
 }
