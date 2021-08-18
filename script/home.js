@@ -39,6 +39,8 @@ function showStore(){
             document.querySelector(`#btn-gerar-${c}`).addEventListener("click", () => {
                 const choosedItem = {
                     name: store[c].name,
+                    season: store[c].season,
+                    episode: store[c].episode
                 }
 
                 localStorage.setItem("choosedItem", JSON.stringify(choosedItem))
